@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    background-image
+</body>
+</html>
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #FF90BC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card-container {
+    perspective: 1000px;
+    /* For a subtle 3D effect on hover */
+}
+
+.card {
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adjusted box-shadow */
+    background-color: rgba(255, 255, 255, 0.826);
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: rotateY(10deg);
+}
+
+.avatar {
+    width: 200px; /* Adjusted width */
+    height: 200px;
+    border-radius: 50%; /* Adjusted border-radius */
+    margin-top: -60px;
+    /* Half outside the card */
+    border: 5px solid #FF90BC; /* Corrected border syntax */
+    /* Creates a nice border effect */
+}
+
+.info {
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    margin: 10px 0;
+}
+
+p {
+    color: #637E76;
+    font-size: 0.9em;
+}
+
+.social-icons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+    margin: 0 10px;
+}
+
+.social-icons a {
+    transition: transform 0.3s;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+}
